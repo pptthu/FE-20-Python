@@ -1,0 +1,393 @@
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links span {
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-login {
+  background: #ffffff !important; 
+  border: 1px solid #5680E9 !important; 
+  color: #000000; 
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-register {
+  background: #5680E9;
+  color: #fff;
+}
+
+/* ===== BANNER ===== */
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 2; 
+  text-align: left;
+}
+
+.about-text .section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #484848;
+}
+
+.about-text h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.about-text .pod {
+  color: #5680E9; 
+}
+
+.about-text .booking {
+  color: #5680E9;
+}
+
+.about-text .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e75480; 
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-img {
+  flex: 1; 
+}
+
+.about-img img {
+  width: 400px;
+  height: 267px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ROOM LIST */
+.home-rooms {
+  padding: 40px 80px;
+}
+
+.home-rooms .section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px; 
+  color: #484848;
+  display: inline-block; 
+  border-bottom: 3px solid #484848;
+  padding-bottom: 4px; 
+}
+
+.home-room-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.home-room-card {
+  width: 260px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.home-room-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-room-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.home-room-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.home-favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.home-room-info {
+  padding: 12px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.home-room-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.home-room-info p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.home-btn {
+  align-self: flex-end;
+  margin-top: 8px;
+  background: #5680E9;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.home-btn:hover {
+  background: #3c5fb5;
+}
+
+/* ===== PAGINATION ===== */
+.pagination-section {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.page, .page-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: transparent; 
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  color: #484848;
+}
+
+.page.active {
+  background: #89AAFC;  
+  color: white;
+  font-weight: bold;
+}
+
+.page-btn:hover,
+.page:hover {
+  background: #e2e8f0;  
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  background: #89AAFC;
+  padding: 40px 80px;
+  margin: 0;     
+}
+
+.newsletter-box {
+  max-width: 1100px;
+  margin: 0 auto; 
+  color: black;
+}
+
+.newsletter-top {
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+  flex-wrap: wrap; 
+}
+
+.newsletter-top h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.newsletter-input {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+}
+
+.newsletter-input input {
+  width: 100%;
+  padding: 12px 50px 12px 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+
+.newsletter-input button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #5680E9;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter-box p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #e6eeff;
+  color: #484848;
+  padding: 40px 20px;
+  margin: 0; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 40px;
+}
+
+.footer-logo img.logo-img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: multiply;
+  margin-left: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.social {
+  margin-top: 15px;
+  font-size: 20px;
+  display: flex;
+  gap: 15px;
+  color: #484848;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+html, body, #root {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+.logged-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logged-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}

@@ -1,0 +1,50 @@
+/* File: src/pages/Admin/UserManagement/UserManagement.css */
+
+.user-management-container {
+    padding: 32px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.table-title {
+    font-size: 32px !important; 
+    font-weight: bold !important;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.add-button {
+    border-radius: 12px !important;
+    padding: 8px 24px !important;
+    font-weight: bold !important;
+}
+
+.search-input .MuiOutlinedInput-root {
+    border-radius: 12px;
+}
+
+.custom-table .MuiTableCell-head {
+    font-weight: bold !important;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6; 
+    text-align: center; 
+}
+
+.custom-table .MuiTableCell-body {
+    border: 1px solid #dee2e6; 
+    text-align: center; 
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}

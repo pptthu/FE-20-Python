@@ -1,0 +1,63 @@
+/* File CSS chung cho các trang quản lý (Ví dụ: LocationManagement.css) */
+
+.management-container { 
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.table-title {
+    font-size: 28px !important; 
+    font-weight: bold !important;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.add-button {
+    border-radius: 12px !important;
+    padding: 8px 24px !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+}
+
+.search-input .MuiOutlinedInput-root {
+    border-radius: 12px;
+}
+
+/* Style cho bảng */
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.custom-table .MuiTableCell-head {
+    font-weight: 600 !important;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    text-align: left;
+    padding: 16px;
+}
+
+.custom-table .MuiTableCell-body {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.custom-table .MuiTableRow-root:last-child .MuiTableCell-body {
+    border-bottom: none;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}

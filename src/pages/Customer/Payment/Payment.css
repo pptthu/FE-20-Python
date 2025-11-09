@@ -1,0 +1,87 @@
+/* Toàn màn hình */
+.pay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f6fa;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card chính */
+.pay-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header trong card */
+.pay-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* mũi tên sát trái */
+  margin-bottom: 20px;
+}
+
+/* Nút back */
+.back-arrow {
+  font-size: 23px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  margin-right: 18px;
+}
+
+/* Tiêu đề */
+.pay-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #484848;
+  margin: 0 auto;  /* căn giữa ngang */
+  text-align: center;
+  flex: 1;         /* chiếm hết chiều ngang để ép về giữa */
+}
+
+
+/* Subtitle */
+.pay-subtitle {
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
+  margin-bottom: 16px;
+  margin: 0 auto; 
+}
+
+/* QR section */
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-image {
+  width: 280px;
+  height: 240px;
+  margin-bottom: 15px;
+}
+
+.qr-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.qr-subtext {
+  font-size: 14px;
+  color: #666;
+}

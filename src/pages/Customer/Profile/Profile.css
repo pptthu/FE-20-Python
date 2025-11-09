@@ -1,0 +1,100 @@
+/* Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Card */
+.profile-card {
+  background: #fff;
+  padding: 65px 70PX;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 550px;
+  text-align: center;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+/* Title */
+.profile-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 20px;
+  color: #484848;  
+}
+
+.profile-title::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: #484848;
+  margin: 8px auto 0;
+}
+
+/* Form input */
+.profile-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Error text */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  border: 1px solid #4a90e2;
+  background: #fff;
+  color: #333;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #f0f8ff;
+}
+
+.save-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #1e63e9;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: #154bc2;
+}

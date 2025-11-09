@@ -1,0 +1,112 @@
+.auth-container {
+  display: flex;
+  height: 100vh; /* chiếm toàn bộ chiều cao màn hình */
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bên trái */
+.auth-left {
+  flex: 0.6; /* nhỏ lại, chỉ chiếm 60% so với tổng chiều ngang */
+  max-width: 600px; /* giới hạn tối đa */
+  height: 100%;
+}
+
+.auth-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signup-left {
+  width: 50%;              /* chia nửa màn hình */
+  display: flex;           
+  justify-content: center; /* căn giữa ngang */
+  align-items: center;     /* căn giữa dọc */
+  padding-left: 40px; /* dịch sang phải 40px */
+}
+
+.signup-left img {
+  max-width: 100%;   /* không bị tràn */
+  max-height: 100%;  /* không vượt quá chiều cao */
+  object-fit: contain; /* giữ tỷ lệ ảnh */
+  border-radius: 20px; /* bo góc như trong hình của bạn */
+}
+/* Bên phải */
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}   
+
+.signup-form {
+  width: 491px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo hình ảnh */
+.signup-logo-img {
+  width: 200px;     
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Input */
+.signup-input {
+  width: 400px;
+  height: 48px;
+  margin-bottom: 20px;
+  border: 1px solid #C1C8E4;
+  border-radius: 10px;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+.signup-input::placeholder {
+  color: #718096;
+}
+
+/* Button */
+.signup-button {
+  width: 400px;
+  height: 48px;
+  margin-top: 10px;
+  background: #5680E9;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #466acb;
+}
+
+/* Text dưới */
+.signup-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #718096;
+}
+
+.signup-link {
+  color: #5680E9;  
+  font-weight: 500;
+  cursor: pointer;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* ẩn thanh cuộn */
+}
